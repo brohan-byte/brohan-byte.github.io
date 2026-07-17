@@ -21,10 +21,10 @@
   display: flex;
   flex-direction: column;
   background-color: $lightBackground2;
-  padding: 1.5rem;
+  padding: 2rem 1.75rem;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .project-card-light {
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
@@ -42,12 +42,17 @@
 
 .project-detail {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
+
 .project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  transform: translateY(-4px);
 }
 .project-card-dark:hover {
   box-shadow: 0px 20px 30px -10px $darkBoxShadow;
+  transform: translateY(-4px);
 }
 .project-image {
   position: relative;
@@ -60,8 +65,48 @@
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 360px));
+  justify-content: center;
+  align-items: start;
+  gap: 2.5rem 2rem;
+  padding: 1rem 0 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Tech-stack tags: kept deliberately quiet — grayscale like the
+// resume, not the bright purple used for the GitHub link below.
+.project-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 0.9rem 0 0.25rem 0;
+}
+
+.tech-tag {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 0.3em 0.7em;
+  border-radius: 4px;
+  border: 1px solid $lightBorder1;
+  color: $cardSubtitle;
+  background: transparent;
+  white-space: nowrap;
+}
+
+.dark-mode .tech-tag {
+  border-color: rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.project-card-footer {
+  margin-top: auto;
+  padding-top: 1.25rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .project-card-footer span.project-tag {
@@ -86,5 +131,11 @@
   .project-subtitle {
     font-size: 16px;
     text-align: center;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
   }
 }

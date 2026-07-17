@@ -7,9 +7,9 @@ import WorkExperience from "./workExperience/WorkExperience";
 import Projects from "./projects/Projects";
 import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
-import Blogs from "./blogs/Blogs";
+// import Blogs from "./blogs/Blogs";
 import Footer from "../components/footer/Footer";
-import Talks from "./talks/Talks";
+// import Talks from "./talks/Talks";
 import Podcast from "./podcast/Podcast";
 import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
@@ -20,7 +20,7 @@ import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
-
+import ResearchOpenSource from "./researchOpenSource/ResearchOpenSource";
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
@@ -56,11 +56,12 @@ const Main = () => {
             <StackProgress />
             <Education />
             <WorkExperience />
+            <ResearchOpenSource />
             <Projects />
             <StartupProject />
             <Achievement />
-            <Blogs />
-            <Talks />
+            {/* <Blogs />
+            <Talks /> */}
             <Twitter />
             <Podcast />
             <Profile />

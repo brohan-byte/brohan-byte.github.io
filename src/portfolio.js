@@ -20,26 +20,25 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Rohan Kondlapudi",
+  title: "Hey There, I'm Rohan",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "CS student at UMass Amherst working on quantum error-correction tooling in Julia through Google Summer of Code. Also into Computer Vision and Graphics — currently exploring monocular SLAM, Gaussian Splatting, and GPU-accelerated rendering."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "", // TODO: add a shareable link to your resume (e.g. Google Drive/GitHub) — set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/brohan-byte",
+  linkedin: "https://linkedin.com/in/sai-rohan-reddy-kondlapudi-0373032a2",
+  gmail: "sairohanredd@umass.edu",
+  gitlab: "",
+  facebook: "",
+  medium: "",
+  stackoverflow: "",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +48,17 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle:
+    "CS STUDENT FOCUSED ON COMPUTER VISION, GRAPHICS, AND SYSTEMS PROGRAMMING",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Build computer vision and graphics pipelines — monocular SLAM, 3D Gaussian Splatting, and real-time CUDA rasterization"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Develop scientific computing tooling in Julia for quantum error correction and noise simulation"
+    ),
+    emoji(
+      "⚡ Design distributed, cloud-native backend systems with microservices, gRPC, and Kafka"
     )
   ],
 
@@ -64,6 +66,22 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
+    {
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "c++",
+      fontAwesomeClassname: "fas fa-code"
+    },
+    {
+      skillName: "javascript",
+      fontAwesomeClassname: "fab fa-js"
+    },
     {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
@@ -73,31 +91,15 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
       skillName: "sql-database",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "mongodb",
       fontAwesomeClassname: "fas fa-database"
     },
     {
@@ -105,19 +107,15 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "git",
+      fontAwesomeClassname: "fab fa-git-alt"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Education Section
@@ -126,23 +124,15 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "University of Massachusetts Amherst",
+      // logo: require("./assets/images/umassLogo.png"), // TODO: add a UMass logo image at this path
+      subHeader: "B.S. in Computer Science, GPA 3.98",
+      duration: "Expected May 2028",
+      desc: "Coursework and research spanning quantum computing, computer vision, systems, and algorithms. Serving as a Supplemental Instruction Leader for a large Data Structures course.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Research Assistant in the Krastanov Lab, contributing to QuantumClifford.jl",
+        "Google Summer of Code contributor with The Julia Language"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -150,19 +140,19 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Computer Vision / Graphics", //Insert stack or technology you have experience in
+      progressPercentage: "85%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Systems / Backend",
+      progressPercentage: "80%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Scientific Computing (Julia)",
+      progressPercentage: "75%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -174,72 +164,198 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      role: "Research Assistant",
+      company: "Krastanov Lab, UMass Amherst",
+      companylogo: require("./assets/images/umass.png"), // TODO: add a UMass logo image at this path
+      date: "September 2025 – Present",
+      desc: "Building and advancing quantum noise simulation and error-correction tooling in the Julia ecosystem, used by researchers at the NSF Engineering Research Center for Quantum Networks."
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Google Summer of Code Contributor",
+      company: "The Julia Language",
+      companylogo: require("./assets/images/gsoc.png"),
+      date: "May 2026 – Present",
+      desc: "Building a Julia framework to discover optimal entanglement purification protocols for quantum communication networks."
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Supplemental Instruction Leader",
+      company: "Learning Resource Center, UMass Amherst",
+      companylogo: require("./assets/images/lrc.jpg"),
+      date: "January 2026 – Present",
+      desc: "Lead weekly review sessions and serve as academic support for a large Data Structures course."
+    },
+    {
+      role: "Web Development Intern",
+      company: "Techouts",
+      companylogo: require("./assets/images/techout.png"),
+      date: "May 2023 – July 2023",
+      desc: "Built a full-stack e-commerce platform with Spring Boot, React, and MySQL, including authentication and payment integration."
     }
   ]
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
-
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
-};
+  title: "Open Source",
+  subtitle:
+    "Contributions to quantum computing and scientific software in the Julia ecosystem.",
 
-// Some big projects you have worked on
-
-const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
+  contributions: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
+      title: "Google Summer of Code 2026",
+      organization: "The Julia Language",
+      description:
+        "Selected as a Google Summer of Code contributor to develop optimization algorithms for discovering high-fidelity Bell-state distillation protocols under realistic quantum hardware constraints.",
+
+      links: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "QEPOptimize.jl",
+          url: "https://github.com/QuantumSavory/QEPOptimize.jl"
         }
-        //  you can add extra buttons here.
       ]
     },
+
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
+      title: "QuantumClifford.jl",
+      organization: "QuantumSavory",
+      description:
+        "Developed extensible circuit-noise infrastructure, including gate, measurement, reset, and idle-noise simulation APIs for efficient stabilizer circuit simulation.",
+
+      links: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "View Repository",
+          url: "https://github.com/QuantumSavory/QuantumClifford.jl"
+        }
+      ]
+    },
+
+    {
+      title: "BPGates.jl",
+      organization: "QuantumSavory",
+      description:
+        "Implemented Bell-preserving noise models and simulation infrastructure for scalable entanglement purification and quantum network simulations.",
+
+      links: [
+        {
+          name: "View Repository",
+          url: "https://github.com/QuantumSavory/BPGates.jl"
+        }
+      ]
+    },
+
+    {
+      title: "QEPOptimize.jl",
+      organization: "QuantumSavory",
+      description:
+        "Built an optimization framework that searches the space of Bell-distillation circuits while evaluating protocol performance under configurable quantum noise models.",
+
+      links: [
+        {
+          name: "View Repository",
+          url: "https://github.com/QuantumSavory/QEPOptimize.jl"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+
+  display: true
+};
+
+// Some big projects you have worked on
+const bigProjects = {
+  title: "Projects",
+  subtitle:
+    "Selected projects spanning computer vision, graphics, systems programming, and emulation.",
+
+  projects: [
+    {
+      image: require("./shots/splat.png"),
+      projectName: "CUDA Gaussian Splatting Renderer",
+
+      projectDesc:
+        "A real-time 3D Gaussian Splatting renderer written in C++ and CUDA, with custom GPU kernels for projection, sorting, and compositing.",
+
+      tech: ["C++", "CUDA", "CUB", "CMake"],
+
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/brohan-byte"
+        }
+      ]
+    },
+
+    {
+      image: require("./shots/grooply.png"),
+      projectName: "Neural Digital Twin System",
+
+      projectDesc:
+        "Turns a phone video into an explorable 3D scene — a custom SLAM pipeline recovers camera motion, then Gaussian Splatting rebuilds the space for viewing in the browser via WebXR.",
+
+      tech: ["Python", "C++", "OpenCV", "NumPy"],
+
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/brohan-byte"
+        }
+      ]
+    },
+
+    {
+      image: require("./shots/nerf.png"),
+      projectName: "NeRF From Scratch",
+
+      projectDesc:
+        "A Neural Radiance Field built from scratch in PyTorch, trained to synthesize new photorealistic viewpoints of real-world scenes.",
+
+      tech: ["Python", "PyTorch"],
+
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/brohan-byte"
+        }
+      ]
+    },
+
+    {
+      image: require("./shots/pong.png"),
+      projectName: "CHIP-8 Emulator",
+
+      projectDesc:
+        "A cycle-accurate CHIP-8 emulator in C++, complete with a full CPU, memory, timers, and graphics — runs classic CHIP-8 ROMs.",
+
+      tech: ["C++"],
+
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/brohan-byte"
+        }
+      ]
+    },
+
+    {
+      image: require("./shots/api.png"),
+      projectName: "Distributed Patient Management System",
+
+      projectDesc:
+        "A microservices-based healthcare platform (auth, billing, analytics) built with Spring Boot, Docker, Kafka, and gRPC behind an API gateway.",
+
+      tech: ["Java", "Spring Boot", "PostgreSQL", "Docker"],
+
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/brohan-byte"
+        }
+      ]
+    }
+  ],
+
+  display: true
 };
 
 // Achievement Section
@@ -247,143 +363,65 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  subtitle: "Achievements and program participation",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Google Summer of Code Contributor",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Selected to contribute to The Julia Language organization, building Bell distillation optimization tooling for quantum communication networks.",
+      // image: require("./assets/images/gsocLogo.png"), // TODO: add a GSoC logo image at this path
+      imageAlt: "Google Summer of Code Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "The Julia Language",
+          url: "https://julialang.org/"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
-// Blogs Section
 
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
 
 // Podcast Section
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
+  subtitle: "",
+  podcast: [],
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
-const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
+// const resumeSection = {
+//   title: "Resume",
+//   subtitle:
+//     "Download my resume for a complete overview of my education, research, technical experience, and projects.",
 
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
-};
+//   resumeLink:
+//     "https://github.com/brohan-byte/brohan-byte/raw/main/Sai_Rohan_Reddy_Kondlapudi_Resume.pdf",
+
+//   display: true
+// };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Interested in computer vision, graphics, or quantum computing? My inbox is open for all.",
+  number: "", // TODO: add a phone number if you'd like it displayed
+  email_address: "sairohanredd@umass.edu"
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "twitter", // TODO: replace "twitter" with your twitter username without @
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
@@ -397,11 +435,9 @@ export {
   openSource,
   bigProjects,
   achievementSection,
-  blogSection,
-  talkSection,
   podcastSection,
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection
+  // resumeSection
 };
