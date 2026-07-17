@@ -23,7 +23,7 @@ const greeting = {
   username: "Rohan Kondlapudi",
   title: "Hey There, I'm Rohan",
   subTitle: emoji(
-    "CS student at UMass Amherst working on quantum error-correction tooling in Julia through Google Summer of Code. Also into Computer Vision and Graphics — currently exploring monocular SLAM, Gaussian Splatting, and GPU-accelerated rendering."
+    "CS student at UMass Amherst working across quantum computing, computer vision, graphics, and GPU programming. Currently a Google Summer of Code contributor."
   ),
   resumeLink: "", // TODO: add a shareable link to your resume (e.g. Google Drive/GitHub) — set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -175,7 +175,7 @@ const workExperiences = {
       company: "The Julia Language",
       companylogo: require("./assets/images/gsoc.png"),
       date: "May 2026 – Present",
-      desc: "Building a Julia framework to discover optimal entanglement purification protocols for quantum communication networks."
+      desc: "Building a Julia framework to discover optimal entanglement purification protocols for Quantum Communication Networks."
     },
     {
       role: "Supplemental Instruction Leader",
@@ -208,12 +208,7 @@ const openSource = {
       description:
         "Selected as a Google Summer of Code contributor to develop optimization algorithms for discovering high-fidelity Bell-state distillation protocols under realistic quantum hardware constraints.",
 
-      links: [
-        {
-          name: "QEPOptimize.jl",
-          url: "https://github.com/QuantumSavory/QEPOptimize.jl"
-        }
-      ]
+      
     },
 
     {
