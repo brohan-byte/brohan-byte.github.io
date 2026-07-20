@@ -334,7 +334,7 @@ const bigProjects = {
 
     {
       image: require("./shots/api.png"),
-      projectName: "Distributed Patient Management System",
+      projectName: "Clinical Operations Manager",
 
       projectDesc:
         "A microservices-based healthcare platform (auth, billing, analytics) built with Spring Boot, Docker, Kafka, and gRPC behind an API gateway.",
